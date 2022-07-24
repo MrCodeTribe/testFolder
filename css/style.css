@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #f1f1f1;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+/* header */
+header {
+    background-color: blueviolet;
+    padding: 10px;
+    color: white;
+    min-height:100px;
+    border-bottom: 2px solid red;
+}
+header .logo {
+   font-size: 18px;
+   float: left;
+   font-variant: small-caps;
+}
+header ul {
+    list-style-type: none;
+    float: right;
+    display: inline-flex;
+}
+header ul li {
+    padding: 20px 25px;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+header ul li a:hover{
+    color: lightgray;
+    text-decoration: underline;
+}
+header .active, header .current a {
+    color: rgb(255, 238, 0);
+}
+/* shocase-area*/
+#showcase {
+    min-height: 400px;
+    background: url(../images/showcase.jpg) no-repeat 0 -700px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.219);
+}
+#showcase h1 {
+    font-size: 40px;
+    font-style: italic;
+}
+#showcase p {
+    font-size: 20px;
+    width: 50%;
+    margin: auto;
+}
+/* newsletter */
+#newsletter {
+    background-color: lightslategray;
+}
+#newsletter h2 {
+    float: left;
+    color: white;
+    font-weight: bold;
+}
+form{
+    float: right;
+    margin-top: 20px;
+}
+form input[type='email'] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+}
+form input[type='email']:focus {
+    outline: none;
+}
+.button_1 {
+    background-color: red;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* boxes */
+#boxes {
+    margin-top: 20px;
+}
+#boxes .box {
+    float: left;
+    width: 30%;
+    text-align: center;
+    border: 1px solid red;
+    margin:  0 10px 0 10px;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.219);
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    
+}
+#boxes .box img {
+    width: 100px;
+    padding-top: 10px;
+}
+#boxes .box:hover {
+    background-color: rgba(119, 136, 153, 0.199);
+}
+/* footer */
+footer {
+    margin-top: 10px;
+    background-color: blueviolet;
+    height: 50px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 16px rgba(255, 0, 0, 0.555);
+}
+footer p {
+    padding-top: 10px;
+    font-size: 20px;
+}
